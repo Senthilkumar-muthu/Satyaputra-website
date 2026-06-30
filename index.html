@@ -1,60 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SATYAPUTRA</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+
+height:100%;
+width:100%;
+
 }
 
 body{
-    height:100vh;
-    background:url("background.jpg") center center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-family:Georgia, serif;
-    overflow:hidden;
-}
 
-body::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.35);
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("background.png");
+
+background-size:cover;
+background-position:center center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+
+font-family:'Cinzel',serif;
+
+overflow:hidden;
+
 }
 
 .container{
-    position:relative;
-    z-index:1;
-    text-align:center;
-    color:white;
+
+text-align:center;
+
+padding:20px;
+
+width:100%;
+
 }
 
 h1{
-    font-size:72px;
-    letter-spacing:10px;
-    font-weight:400;
-    text-shadow:0 0 15px rgba(0,0,0,.8);
+
+color:#f6f2eb;
+
+font-size:clamp(42px,9vw,125px);
+
+font-weight:600;
+
+letter-spacing:.10em;
+
+text-transform:uppercase;
+
+text-shadow:
+0 2px 3px rgba(255,255,255,.08),
+0 4px 15px rgba(0,0,0,.95),
+0 0 35px rgba(0,0,0,.85);
+
 }
 
 .line{
-    width:240px;
-    height:1px;
-    background:#b38b5a;
-    margin:35px auto;
+
+width:180px;
+height:1px;
+
+background:#b79263;
+
+margin:35px auto;
+
+opacity:.9;
+
 }
 
 p{
-    font-size:26px;
-    letter-spacing:8px;
-    color:#d4b080;
+
+color:#d8b489;
+
+font-size:clamp(18px,2vw,32px);
+
+letter-spacing:.35em;
+
+font-weight:500;
+
+text-shadow:
+0 2px 12px rgba(0,0,0,.9);
+
 }
+
+@media (max-width:900px){
+
+h1{
+
+font-size:12vw;
+
+letter-spacing:.07em;
+
+}
+
+.line{
+
+width:130px;
+
+margin:28px auto;
+
+}
+
+p{
+
+font-size:20px;
+
+letter-spacing:.24em;
+
+}
+
+}
+
+@media (max-width:480px){
+
+h1{
+
+font-size:11vw;
+
+letter-spacing:.05em;
+
+}
+
+.line{
+
+width:110px;
+
+margin:24px auto;
+
+}
+
+p{
+
+font-size:18px;
+
+letter-spacing:.20em;
+
+}
+
+}
+
 </style>
 
 </head>
@@ -62,10 +166,15 @@ p{
 <body>
 
 <div class="container">
-    <h1>SATYAPUTRA</h1>
-    <div class="line"></div>
-    <p>COMING SOON</p>
+
+<h1>SATYAPUTRA</h1>
+
+<div class="line"></div>
+
+<p>COMING SOON</p>
+
 </div>
 
 </body>
+
 </html>
