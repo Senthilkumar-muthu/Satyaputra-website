@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SATYAPUTRA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:url("background.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Georgia, serif;
+    overflow:hidden;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+}
+
+.container{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    color:white;
+}
+
+h1{
+    font-size:72px;
+    letter-spacing:10px;
+    font-weight:400;
+    text-shadow:0 0 15px rgba(0,0,0,.8);
+}
+
+.line{
+    width:240px;
+    height:1px;
+    background:#b38b5a;
+    margin:35px auto;
+}
+
+p{
+    font-size:26px;
+    letter-spacing:8px;
+    color:#d4b080;
+}
+</style>
+
 </head>
+
 <body>
-<h1>SATYAPUTRA</h1>
-<p>Coming Soon.</p>
+
+<div class="container">
+    <h1>SATYAPUTRA</h1>
+    <div class="line"></div>
+    <p>COMING SOON</p>
+</div>
+
 </body>
 </html>
