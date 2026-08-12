@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SATYAPUTRA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800;900&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800;900&family=Cinzel+Decorative:wght@700;900&display=optional" rel="stylesheet">
 <style>
   :root{
     --gold-hi:#f6dfa0;
@@ -40,6 +41,15 @@
     object-position:50% 50%;
   }
 
+  /* On wide/landscape screens, letterbox instead of cropping —
+     keeps the sky/ground bands (and the text sitting in them)
+     in the same relative position as on a tall phone screen */
+  @media (min-aspect-ratio: 4/5){
+    .hero img{
+      object-fit:contain;
+    }
+  }
+
   .title{
     position:absolute;
     top:16%;
@@ -50,8 +60,9 @@
   }
 
   h1.carved{
-    font-family:'Cinzel Decorative', serif;
+    font-family:'Cinzel Decorative', 'Trajan Pro', 'Times New Roman', Georgia, serif;
     font-weight:900;
+    font-variant:small-caps;
     font-size:clamp(2.1rem, 9vw, 4.4rem);
     letter-spacing:0.12em;
     line-height:1;
@@ -88,7 +99,7 @@
     display:inline-flex;
     align-items:center;
     gap:0.9rem;
-    font-family:'Cinzel', serif;
+    font-family:'Cinzel', 'Times New Roman', Georgia, serif;
     font-size:clamp(0.62rem, 1.9vw, 0.85rem);
     letter-spacing:0.48em;
     text-transform:uppercase;
